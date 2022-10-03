@@ -27,5 +27,6 @@ export const post = (yup: IYup, params: object) =>
       name: yup.string().required(),
       email: yup.string().required(),
       password: yup.string().required(),
+      phoneNumber: yup.string().required(),
     })
     .validateSync(params, { abortEarly: false });

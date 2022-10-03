@@ -1,35 +1,12 @@
-## typescript-node-express-mongo-starter
+## BE for Mejacerita web
 
-Start your project with this starter created with Typescript.
-
-Included support to multilanguage and params validation.
+The project for blogging website based on typescript node js boilerplate by [davidsons](https://github.com/davidsonsns/)
 
 ### Prerequisites
 
 - MongoDB instaled and running
 - Yarn or NPM and Node
 
-### Getting started
-
-Clone this repository
-```sh
-git clone https://github.com/davidsonsns/ts-server.git <project_name>
-```
-
-Entring inside the project folder and installing the dependencies
-```sh
-cd <project_name> && yarn install
-```
-
-Development
-```sh
-yarn start:dev
-```
-
-Production
-```sh
-start:prod
-```
 
 ### Some references
 

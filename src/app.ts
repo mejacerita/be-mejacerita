@@ -8,6 +8,8 @@ import polyglot from '@config/polyglot'
 import yup from '@config/yup'
 import routes from './routes'
 
+const { MONGODB_URI } = process.env
+
 class App {
   public express: express.Application
 
@@ -66,7 +68,7 @@ class App {
   }
 
   private database() {
-    const uri: string = process.env.MONGODB_URI as string
+    const uri: string = MONGODB_URI as string
     mongoose.connect(uri, { useNewUrlParser: true })
   }
 

@@ -30,3 +30,12 @@ export const post = (yup: IYup, params: object) =>
       phoneNumber: yup.string().required(),
     })
     .validateSync(params, { abortEarly: false });
+
+export const login = (yup: IYup, params: object) =>
+  yup
+    .object()
+    .shape({
+      email: yup.string().required(),
+      password: yup.string().required(),
+    })
+    .validateSync(params, { abortEarly: false });

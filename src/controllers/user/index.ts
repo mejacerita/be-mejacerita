@@ -1,12 +1,12 @@
 import { Document, Model } from 'mongoose'
 
-import UserMdl from '@schemas/User'
+import UserModel from '@schemas/User'
 
 class User {
   public model: Model<Document>
 
   constructor() {
-    this.model = UserMdl
+    this.model = UserModel
   }
 }
 
